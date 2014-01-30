@@ -77,8 +77,8 @@
 				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
 			</Item>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
-			<Item Name="Receive DS Packet.vi" Type="VI" URL="../../../../Desktop/Nicholas2/Dashboard/Receive DS Packet.vi"/>
-			<Item Name="DStoPCPacketTypeDef.ctl" Type="VI" URL="../../../../Desktop/Nicholas2/Dashboard/DStoPCPacketTypeDef.ctl"/>
+			<Item Name="DStoPCPacketTypeDef.ctl" Type="VI" URL="../DStoPCPacketTypeDef.ctl"/>
+			<Item Name="Receive DS Packet.vi" Type="VI" URL="../Receive DS Packet.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC PC Dashboard" Type="EXE">
