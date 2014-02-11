@@ -13,6 +13,10 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="ButtonFinder.vi" Type="VI" URL="../ButtonFinder.vi"/>
 		<Item Name="visionTesting.vi" Type="VI" URL="../visionTesting.vi"/>
+		<Item Name="regionTester.vi" Type="VI" URL="../regionTester.vi"/>
+		<Item Name="QueueTester.vi" Type="VI" URL="../QueueTester.vi"/>
+		<Item Name="JoystickTest.vi" Type="VI" URL="../JoystickTest.vi"/>
+		<Item Name="newRegionTester.vi" Type="VI" URL="../newRegionTester.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NetComm_UsageReport_ResourceType.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UsageReport_ResourceType.ctl"/>
@@ -41,15 +45,8 @@
 				<Item Name="WPI_CameraERRAccountProblem.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraERRAccountProblem.vi"/>
 				<Item Name="WPI_CameraIssue HTTP Request with Authentication.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraIssue HTTP Request with Authentication.vi"/>
 				<Item Name="IMAQ Clear Overlay" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Clear Overlay"/>
-				<Item Name="Particle Parameters" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Particle Parameters"/>
-				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
-				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
-				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
-				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 				<Item Name="WPI_CameraDecodeJPEGString.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraDecodeJPEGString.vi"/>
 				<Item Name="DS_Mode_Simulation_Global.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/DS_Mode_Simulation_Global.vi"/>
 				<Item Name="WPI_CameraRead MJPG.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraRead MJPG.vi"/>
@@ -84,6 +81,13 @@
 				<Item Name="IMAQ AVI2 Open" Type="VI" URL="/&lt;vilib&gt;/vision/Avi.llb/IMAQ AVI2 Open"/>
 				<Item Name="WPI_DashboardFPS Calculator.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardFPS Calculator.vi"/>
 				<Item Name="WPI_CameraRead MJPG for Dashboard.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraRead MJPG for Dashboard.vi"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="Particle Parameters" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Particle Parameters"/>
+				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
+				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
+				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 			</Item>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -92,17 +96,17 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="TargetType.ctl" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/TargetType.ctl"/>
-			<Item Name="Rectangularity Score.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rectangularity Score.vi"/>
-			<Item Name="Aspect Ratio Score.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Aspect Ratio Score.vi"/>
-			<Item Name="Sorted Particle Report.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Sorted Particle Report.vi"/>
-			<Item Name="Process Image for Target.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Process Image for Target.vi"/>
-			<Item Name="Label Targets.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Label Targets.vi"/>
-			<Item Name="Rank HV combos.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rank HV combos.vi"/>
-			<Item Name="Separate Particles.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Separate Particles.vi"/>
-			<Item Name="Score and Rank Target Objects.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Score and Rank Target Objects.vi"/>
-			<Item Name="Compute DistanceToTarget.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute DistanceToTarget.vi"/>
-			<Item Name="Compute Target Distances.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute Target Distances.vi"/>
 			<Item Name="Calibration Helper.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Calibration Helper.vi"/>
+			<Item Name="Process Image for Target.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Process Image for Target.vi"/>
+			<Item Name="Sorted Particle Report.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Sorted Particle Report.vi"/>
+			<Item Name="Aspect Ratio Score.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Aspect Ratio Score.vi"/>
+			<Item Name="Rectangularity Score.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rectangularity Score.vi"/>
+			<Item Name="Score and Rank Target Objects.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Score and Rank Target Objects.vi"/>
+			<Item Name="Separate Particles.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Separate Particles.vi"/>
+			<Item Name="Rank HV combos.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rank HV combos.vi"/>
+			<Item Name="Label Targets.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Label Targets.vi"/>
+			<Item Name="Compute Target Distances.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute Target Distances.vi"/>
+			<Item Name="Compute DistanceToTarget.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute DistanceToTarget.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -629,9 +633,6 @@ DirectoryIndex index.htm
 				<Item Name="WPI_EncoderGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderGet.vi"/>
 				<Item Name="WPI_DriverStationSet High Priority Dashboard Data.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DriverStation/WPI_DriverStationSet High Priority Dashboard Data.vi"/>
 				<Item Name="WPI_SolenoidRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidRefNum Registry Get.vi"/>
-				<Item Name="WPI_SolenoidGetBool.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/Deprecated/WPI_SolenoidGetBool.vi"/>
-				<Item Name="WPI_SolenoidGetEnum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidGetEnum.vi"/>
-				<Item Name="WPI_SolenoidGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidGet.vi"/>
 				<Item Name="WPI_MotorControlRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Get.vi"/>
 				<Item Name="WPI_DigitalInputDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputDevRef.ctl"/>
 				<Item Name="WPI_DigitalInputGetSetRefNum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalInput/WPI_DigitalInputGetSetRefNum.vi"/>
@@ -724,13 +725,6 @@ DirectoryIndex index.htm
 				<Item Name="WPI_DashboardVIdeo Path for Read.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardVIdeo Path for Read.vi"/>
 				<Item Name="WPI_DashboardFPS Calculator.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardFPS Calculator.vi"/>
 				<Item Name="WPI_CameraRead MJPG for Dashboard.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraRead MJPG for Dashboard.vi"/>
-				<Item Name="Particle Parameters" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Particle Parameters"/>
-				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
-				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
-				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
-				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 				<Item Name="WPI_RelayRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Relay/WPI_RelayRefNum Registry Set.vi"/>
 				<Item Name="WPI_RelayRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Relay/WPI_RelayRefNum Registry Get.vi"/>
 				<Item Name="FPGA_DIOReadPWMValue.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/DIO/FPGA_DIOReadPWMValue.vi"/>
@@ -738,6 +732,16 @@ DirectoryIndex index.htm
 				<Item Name="WPI_PWMGetValue.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/PWM/WPI_PWMGetValue.vi"/>
 				<Item Name="WPI_MotorControlScaleFromPWM.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlScaleFromPWM.vi"/>
 				<Item Name="WPI_MotorControlGetOutput.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlGetOutput.vi"/>
+				<Item Name="WPI_DigitalOutputDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/DigitalOutput/WPI_DigitalOutputDevRef.ctl"/>
+				<Item Name="WPI_CounterDigitalOutputToDigitalSource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterDigitalOutputToDigitalSource.vi"/>
+				<Item Name="WPI_CounterDigitalInputToDigitalSource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterDigitalInputToDigitalSource.vi"/>
+				<Item Name="FPGA_AnalogTriggerDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/AnalogTrigger/FPGA_AnalogTriggerDevRef.ctl"/>
+				<Item Name="WPI_CounterAnalogTriggerToDigitalSource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterAnalogTriggerToDigitalSource.vi"/>
+				<Item Name="WPI_CounterToDigitalSource.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Counter/WPI_CounterToDigitalSource.vi"/>
+				<Item Name="WPI_EncoderConfigureTimer.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderConfigureTimer.vi"/>
+				<Item Name="WPI_SolenoidGetBool.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/Deprecated/WPI_SolenoidGetBool.vi"/>
+				<Item Name="WPI_SolenoidGetEnum.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidGetEnum.vi"/>
+				<Item Name="WPI_SolenoidGet.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Solenoid/WPI_SolenoidGet.vi"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -749,17 +753,14 @@ DirectoryIndex index.htm
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="TargetType.ctl" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/TargetType.ctl"/>
-			<Item Name="Rectangularity Score.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rectangularity Score.vi"/>
-			<Item Name="Aspect Ratio Score.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Aspect Ratio Score.vi"/>
-			<Item Name="Sorted Particle Report.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Sorted Particle Report.vi"/>
-			<Item Name="Process Image for Target.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Process Image for Target.vi"/>
-			<Item Name="Label Targets.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Label Targets.vi"/>
-			<Item Name="Rank HV combos.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rank HV combos.vi"/>
-			<Item Name="Separate Particles.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Separate Particles.vi"/>
-			<Item Name="Score and Rank Target Objects.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Score and Rank Target Objects.vi"/>
-			<Item Name="Calibration Helper.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Calibration Helper.vi"/>
-			<Item Name="Compute DistanceToTarget.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute DistanceToTarget.vi"/>
-			<Item Name="Compute Target Distances.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute Target Distances.vi"/>
+			<Item Name="Calibration Helper.vi" Type="VI" URL="../../../../../../Program Files/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Calibration Helper.vi"/>
+			<Item Name="Process Image for Target.vi" Type="VI" URL="../../../../../../Program Files/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Process Image for Target.vi"/>
+			<Item Name="Score and Rank Target Objects.vi" Type="VI" URL="../../../../../../Program Files/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Score and Rank Target Objects.vi"/>
+			<Item Name="Compute Target Distances.vi" Type="VI" URL="../../../../../../Program Files/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute Target Distances.vi"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -771,8 +772,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">FRC Robot Boot-up Deployment</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Driver/Documents/LabVIEW Data/2014 Robot Project/Builds</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Public/startup.rtexe</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{818764A5-CF2F-459D-99A2-FC861F69E9D6}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
@@ -785,7 +785,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{731BD68C-E215-4DF6-AEFD-CC6489E4E327}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4DECDC9F-47C4-4B76-93BF-4B97C663D3DE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/Robot Main.vi</Property>
@@ -794,7 +794,6 @@ DirectoryIndex index.htm
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">My Real-Time Application</Property>
-				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
 				<Property Name="TgtF_internalName" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2008 NI</Property>
 				<Property Name="TgtF_productName" Type="Str">My Real-Time Application</Property>
